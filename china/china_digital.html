@@ -767,7 +767,7 @@ html {
 
 <!-- 2. 第1屏 Banner -->
 <section class="banner" id="home">
-  <video class="banner-video" autoplay loop muted>
+  <video class="banner-video" playsinline autoplay loop muted>
     <source src="https://github.com/ciri10k/home_page/releases/download/china-video/home_pagevedio.mp4" type="video/mp4">
   </video>
   <div class="banner-content">
@@ -787,42 +787,42 @@ html {
   <section class="infra">
     <div class="infra-grid">
       <div class="infra-item">
-        <img src="FAST.jpg" alt="FAST">
+        <img src="static/FAST.jpg" alt="FAST">
         <p style="color:#ff9800;font-weight:600;">貴州"天眼" (FAST)</p>
         <p>宇宙天体の観測を行い、通信能力の向上に寄与している。</p>
       </div>
       <div class="infra-item">
-        <img src="BeiDou.jpg" alt="BeiDou">
+        <img src="static/BeiDou.jpg" alt="BeiDou">
         <p style="color:#ff9800;font-weight:600;">北斗衛星導航システム(BeiDou)</p>
         <p>高精度の測位・ナビゲーション・時刻配信サービスを提供する重要な役割を果たしている</p>
       </div>
       <div class="infra-item">
-        <img src="1000v特高電圧.jpg" alt="特高電圧">
+        <img src="static/1000v特高電圧.jpg" alt="特高電圧">
         <p style="color:#ff9800;font-weight:600;">1000v特高電圧</p>
         <p>長距離・大容量の電力輸送を可能にし、送電効率の向上とエネルギー損失の削減に大きく寄与している</p>
       </div>
       <div class="infra-item">
-        <img src="5G.jpg" alt="光ファイバー">
+        <img src="static/5G.jpg" alt="光ファイバー">
         <p style="color:#ff9800;font-weight:600;">光ファイバー</p>
         <p>高速かつ大容量のデータ伝送を実現する通信媒体。インターネット・5G・データセンターを支える。</p>
       </div>
       <div class="infra-item">
-        <img src="データセンター.jpg" alt="データセンター">
+        <img src="static/データセンター.jpg" alt="データセンター">
         <p style="color:#ff9800;font-weight:600;">データセンター</p>
         <p>大量のデータを安全かつ安定的に保存・処理する施設。</p>
       </div>
       <div class="infra-item">
-        <img src="算力センター.jpg" alt="算力センター">
+        <img src="static/算力センター.jpg" alt="算力センター">
         <p style="color:#ff9800;font-weight:600;">算力センター</p>
         <p>AI処理やHPCを行う大規模計算資源を提供。</p>
       </div>
       <div class="infra-item">
-        <img src="Sina City Brain.jpg" alt="Sina City Brain">
+        <img src="static/Sina City Brain.jpg" alt="Sina City Brain">
         <p style="color:#ff9800;font-weight:600;">新浪シティブレイン</p>
         <p>都市の交通・公共サービスを統合的に管理するプラットフォーム。</p>
       </div>
       <div class="infra-item">
-        <img src="区块チェーン.JPG" alt="区块チェーン研究院">
+        <img src="static/区块チェーン.jpg" alt="区块チェーン研究院">
         <p style="color:#ff9800;font-weight:600;">区块チェーン研究院</p>
         <p>ブロックチェーン技術を研究し応用する専門機関。</p>
       </div>
@@ -833,17 +833,17 @@ html {
   <section class="stats">
     <div class="stats-box">
       <div class="stat-item">
-        <div class="stat-icon" style="background-image:url('通信.png');"></div>
+        <div class="stat-icon" style="background-image:url('static/通信.png');"></div>
         <h3>ネットワーク基盤</h3>
         <p>464.6万 5G基站</p>
       </div>
       <div class="stat-item">
-        <div class="stat-icon" style="background-image:url('算力.png');"></div>
+        <div class="stat-icon" style="background-image:url('static/算力.png');"></div>
         <h3>算力インフラ</h3>
         <p>算力規模：世界の第2名</p>
       </div>
       <div class="stat-item">
-        <div class="stat-icon" style="background-image:url('data.png');"></div>
+        <div class="stat-icon" style="background-image:url('static/data.png');"></div>
         <h3>データ基盤</h3>
         <p>18都市でデータ連携</p>
       </div>
@@ -859,9 +859,9 @@ html {
 
   <!-- 5. 第4屏：スマート決済 -->
   <section class="case-section" id="smart-payment">
-    <div class="case-video" onclick="openVideoModal('smartphone.mp4')">
+    <div class="case-video" onclick="openVideoModal('https://github.com/ciri10k/home_page/releases/download/china-video/smartphone.mp4')">
       <div class="video-thumbnail"></div>
-      <video>
+      <video autoplay loop muted playsinline>
         <source src="https://github.com/ciri10k/home_page/releases/download/china-video/smartphone.mp4" type="video/mp4">
       </video>
     </div>
@@ -877,9 +877,9 @@ html {
       <h2>スマート家電</h2>
       <p>家庭のIoT化が急速に進み、音声アシスタントやスマートフォンで家電を統合管理。エネルギー効率の向上と快適な生活空間を実現しています。</p>
     </div>
-    <div class="case-video" onclick="openVideoModal('smarthome.mp4')">
+    <div class="case-video" onclick="openVideoModal('https://github.com/ciri10k/home_page/releases/download/china-video/smarthome.mp4')">
       <div class="video-thumbnail"></div>
-      <video>
+      <video autoplay loop muted playsinline>
         <source src="https://github.com/ciri10k/home_page/releases/download/china-video/smarthome.mp4" type="video/mp4">
       </video>
     </div>
@@ -887,9 +887,9 @@ html {
 
   <!-- 7. 第6屏：スマート病院 -->
   <section class="case-section" id="smart-hospital">
-    <div class="case-video" onclick="openVideoModal('smarthospital.mp4')">
+    <div class="case-video" onclick="openVideoModal('https://github.com/ciri10k/home_page/releases/download/china-video/smarthospital.mp4')">
       <div class="video-thumbnail"></div>
-      <video>
+      <video autoplay loop muted playsinline>
         <source src="https://github.com/ciri10k/home_page/releases/download/china-video/smarthospital.mp4" type="video/mp4">
       </video>
     </div>
@@ -903,15 +903,15 @@ html {
   <section class="ai" id="ai-application">
     <h2 class="ai-section-title">AI応用</h2>
     <div class="ai-grid">
-      <div class="ai-img"><img src="無人機.jpg" alt="无人机"></div>
-      <div class="ai-img"><img src="机器人.jpg" alt="人形机器人"></div>
-      <div class="ai-img"><img src="汽车.jpg" alt="无人汽车"></div>
-      <div class="ai-img"><img src="ai视频生成电影.jpg" alt="AI视频生成電影"></div>
-      <div class="ai-img"><img src="自动化港口.jpg" alt="自动化港口"></div>
-      <div class="ai-img"><img src="ai农业.jpg" alt="AI農業"></div>
-      <div class="ai-img"><img src="机械臂检修电网.jpg" alt="機械臂検修電網"></div>
-      <div class="ai-img"><img src="工場.jpg" alt="AI工場"></div>
-      <div class="ai-img"><img src="遠距離手術.jpg" alt="遠隔手術"></div>
+      <div class="ai-img"><img src="static/無人機.jpg" alt="无人机"></div>
+      <div class="ai-img"><img src="static/机器人.jpg" alt="人形机器人"></div>
+      <div class="ai-img"><img src="static/汽车.jpg" alt="无人汽车"></div>
+      <div class="ai-img"><img src="static/ai视频生成电影.jpg" alt="AI视频生成電影"></div>
+      <div class="ai-img"><img src="static/自动化港口.jpg" alt="自动化港口"></div>
+      <div class="ai-img"><img src="static/ai农业.JPG" alt="AI農業"></div>
+      <div class="ai-img"><img src="static/机械臂检修电网.jpg" alt="機械臂検修電網"></div>
+      <div class="ai-img"><img src="static/工場.jpg" alt="AI工場"></div>
+      <div class="ai-img"><img src="static/遠距離手術.jpg" alt="遠隔手術"></div>
     </div>
   </section>
 </div>
@@ -925,9 +925,9 @@ html {
   <!-- 9. 第8屏：新闻 -->
   <section class="news">
     <div class="news-left">
-      <div class="news-video" onclick="openVideoModal('AI2027.mp4')">
+      <div class="news-video" onclick="openVideoModal('https://github.com/ciri10k/home_page/releases/download/china-video/AI2027.mp44')">
         <div class="video-thumbnail" style="background-image: url('AI2027封面.jpg');"></div>
-        <video>
+        <video autoplay loop muted playsinline>
           <source src="https://github.com/ciri10k/home_page/releases/download/china-video/AI2027.mp4" type="video/mp4">
         </video>
       </div>
@@ -959,7 +959,7 @@ html {
 <div class="banner-section">
   <!-- 10. 第9屏：収尾Banner -->
   <section class="end-banner">
-    <video autoplay loop muted>
+    <video autoplay loop muted playsinline>
       <source src="https://github.com/ciri10k/home_page/releases/download/china-video/2024.mp4" type="video/mp4">
     </video>
     <div class="end-text">過去の一年世界科技の発展</div>
