@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <title>中国のデジタル化</title>
 <style>
+
+* {
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +31,7 @@ body {
   backdrop-filter: blur(8px);
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-sizing: border-box;
 }
 
 .nav-left {
@@ -665,37 +671,12 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 /* === 平滑滚动 === */
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* === 响应式 === */
-@media screen and (max-width: 1200px) {
-  .infra-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .ai-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .case-section {
-    flex-direction: column;
-  }
-  
-  .case-section.reverse {
-    flex-direction: column;
-  }
-  
-  .news {
-    flex-direction: column;
-  }
-  
-  .news-left,
-  .news-right {
-    width: 100%;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .infra-grid,
@@ -704,7 +685,7 @@ html {
   }
   
   .nav {
-    padding: 0 20px;
+    padding: 0 16px;
   }
   
   .nav-center ul {
@@ -748,7 +729,7 @@ html {
   </div>
   <nav class="nav-center">
     <ul>
-      <li><a href="#home">ホーム</a></li>
+      <li><a href="../index.html">ホーム</a></li>
       <li><a href="#infra">インフラ</a></li>
       <li class="dropdown">
         <a href="#examples">実例</a>
